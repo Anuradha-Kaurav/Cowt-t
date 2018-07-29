@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:userId="@+userId/img_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_dot" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:userId="@+userId/singelist"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:userId="@+userId/txt_usermode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:text="(Romantic)"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:userId="@+userId/txt_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="sonali"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:userId="@+userId/ll_like_dis_comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:userId="@+userId/img_lick"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="@drawable/ic_tum_like" />
+
+            <TextView
+                android:userId="@+userId/txt_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:userId="@+userId/img_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="@drawable/ic_tum_dislike" />
+
+            <TextView
+                android:userId="@+userId/txt_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:userId="@+userId/rewcowtit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ReCowt!t"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:userId="@+userId/cowtit_thef"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Cowt!t Thief"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <!-- START NEW CHANGES--><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        andruserIdd:iduserId@+id/singelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        andruserIdd:iduserId@+id/txt_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:text="hgjdghjhdgjshg"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        andruserIdd:iduserId@+id/img_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_dot" />
+                </LinearLayout>
+                &lt;!&ndash;<TextView&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;
+                &lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;
+                &lt;!&ndash;andruserIdd:iduserId@+id/txt_username"&ndash;&gt;
+                &lt;!&ndash;android:text=".Trijal Madan"&ndash;&gt;
+                &lt;!&ndash;android:textAlignment="textStart"&ndash;&gt;
+                &lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;
+                <TextView
+                    andruserIdd:iduserId@+id/txt_usermode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="(Romantic)"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    &lt;!&ndash;<View&ndash;&gt;
+    &lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="1dp"&ndash;&gt;
+    &lt;!&ndash;android:background="#c0c0c0"/>&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/gray1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                andruserIdd:iduserId@+id/img_lick"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="@drawable/ic_tum_like" />
+
+            <TextView
+                andruserIdd:iduserId@+id/txt_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                andruserIdd:iduserId@+id/img_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="@drawable/ic_tum_dislike" />
+
+            <TextView
+                andruserIdd:iduserId@+id/txt_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                andruserIdd:iduserId@+id/rewcowtit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ReCowt!t"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                andruserIdd:iduserId@+id/cowtit_thef"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cowt!t Thief"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    &lt;!&ndash;<View&ndash;&gt;
+    &lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="2dp"&ndash;&gt;
+    &lt;!&ndash;android:background="#c0c0c0"/>&ndash;&gt;
+</LinearLayout>
+-->
+

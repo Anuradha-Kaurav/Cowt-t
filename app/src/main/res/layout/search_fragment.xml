@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:userId="@+userId/sevp"
+    android:background="#e1e0e0"
+    tools:context="Fragment.SearchFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--andruserIdd:iduserId@+id/srh_by_user"/>-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--andruserIdd:iduserId@+id/srh_in_mode" />-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--andruserIdd:iduserId@+id/srh_in_all"/>-->
+
+    <!--<SearchView-->
+    <!--andruserIdd:iduserId@+id/simpleSearchView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:padding="5dp"/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--andruserIdd:iduserId@+id/list_serch">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <android.support.v4.view.ViewPager
+        android:userId="@+userId/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <android.support.design.widget.TabLayout
+            android:userId="@+userId/tabs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+        <android.support.v7.widget.Toolbar
+            android:userId="@+userId/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
