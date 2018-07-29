@@ -6,7 +6,7 @@
     android:animateLayoutChanges="true"
     android:background="@drawable/grad_bg"
     android:orientation="vertical"
-    tools:context="com.cowtit.quote.Activity.MainActivity">
+    tools:context="com.quote.cowtit.Activity.MainActivity">
 
     <!--<android.support.v7.widget.Toolbar
         andruserIdd:iduserId@+id/toolbar"

@@ -39,5 +39,4 @@ dependencies {
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.0.0'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
-
 }

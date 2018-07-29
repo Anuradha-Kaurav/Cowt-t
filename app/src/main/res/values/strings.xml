@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">Cwotit</string>
+    <string name="app_name">Cowtit</string>
 
-
-    <string name="title_activity_deshbord">Deshbord</string>
+    <string name="title_activity_deshbord">Dashbord</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
@@ -28,13 +27,11 @@
     <item name="visible" type="userId" />
     <item name="masked" type="userId" />
 
-
     <string-array name="array_option">
         <item>Follow</item>
         <item>Re-quote</item>
         <item>Report Plagiarism</item>
 
     </string-array>
-
 
 </resources>

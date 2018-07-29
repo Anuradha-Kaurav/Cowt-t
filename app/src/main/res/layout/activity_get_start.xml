@@ -7,7 +7,7 @@
     android:background="@drawable/bg"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.cowtit.quote.Activity.GetStart">
+    tools:context="com.quote.cowtit.Activity.GetStart">
 
     <Button
         android:userId="@+userId/btn_getstart"
