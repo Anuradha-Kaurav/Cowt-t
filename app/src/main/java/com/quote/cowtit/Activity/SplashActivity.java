@@ -10,10 +10,10 @@ import android.widget.ImageView;
 
 import com.quote.cowtit.R;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
 
-    public static String TAG = MainActivity.class.getCanonicalName();
+    public static String TAG = SplashActivity.class.getCanonicalName();
     private Toolbar toolbar;
     ImageView icLogo;
 
@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             try {
 
-                Intent intent1 = new Intent(MainActivity.this, GetStart.class);
+                Intent intent1 = new Intent(SplashActivity.this, GetStart.class);
                 intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent1);
                 finish();
 
             } catch (Exception e) {
-                Log.e("TAG", "Exception in [MainActivity] :: [run] :: " + e);
+                Log.e("TAG", "Exception in [SplashActivity] :: [run] :: " + e);
                 e.printStackTrace();
             }
         }
