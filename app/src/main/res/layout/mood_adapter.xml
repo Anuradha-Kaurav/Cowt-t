@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="6dp"
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -16,12 +17,12 @@
         android:orientation="vertical">
 
         <ImageView
-            android:userId="@+userId/img_cowtit"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content" />
+            android:id="@+id/img_cowtit"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
 
         <TextView
-            android:userId="@+userId/txt_cowtit"
+            android:id="@+id/txt_cowtit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

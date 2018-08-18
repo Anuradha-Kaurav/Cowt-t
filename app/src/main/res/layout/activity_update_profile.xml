@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.quote.cowtit.Activity.UpdateProfile">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +26,7 @@
             android:text="Email Id" />
 
         <TextView
-            android:userId="@+userId/update_email"
+            android:id="@+id/update_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -46,7 +45,7 @@
             android:text="Name" />
 
         <EditText
-            android:userId="@+userId/edt_up_name"
+            android:id="@+id/edt_up_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -64,7 +63,7 @@
             android:text="User Name" />
 
         <EditText
-            android:userId="@+userId/edt_up_Uname"
+            android:id="@+id/edt_up_Uname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -82,7 +81,7 @@
             android:text="Phone Number" />
 
         <EditText
-            android:userId="@+userId/edt_up_phone_no"
+            android:id="@+id/edt_up_phone_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -104,11 +103,11 @@
         <!--android:background="@drawable/edit_shap"-->
         <!--android:layout_marginLeft="30dp"-->
         <!--android:layout_marginRight="30dp"-->
-        <!--andruserIdd:iduserId@+id/up_new_pass"-->
+        <!--andridd:idid@+id/up_new_pass"-->
         <!--android:padding="10dp"-->
         <!--android:hint="Rahul"/>-->
         <!--<android.support.design.widget.TextInputLayout-->
-        <!--andruserIdd:iduserId@+id/etPassLaysigin4"-->
+        <!--andridd:idid@+id/etPassLaysigin4"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:layout_marginLeft="30dp"-->
@@ -117,7 +116,7 @@
         <!--app:passwordToggleEnabled="true">-->
 
         <!--<android.support.design.widget.TextInputEditText-->
-        <!--andruserIdd:iduserId@+id/up_new_pass"-->
+        <!--andridd:idid@+id/up_new_pass"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:background="@drawable/edit_shap"-->
@@ -126,7 +125,7 @@
         <!--android:padding="10sp" />-->
         <!--</android.support.design.widget.TextInputLayout>-->
         <Button
-            android:userId="@+userId/btn_updateprofile"
+            android:id="@+id/btn_updateprofile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"

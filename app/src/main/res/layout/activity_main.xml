@@ -6,7 +6,7 @@
     android:animateLayoutChanges="true"
     android:background="@drawable/grad_bg"
     android:orientation="vertical"
-    tools:context="com.quote.cowtit.Activity.MainActivity">
+    tools:context="com.quote.cwotit.Activity.SplashActivity">
 
     <!--<android.support.v7.widget.Toolbar
         andruserIdd:iduserId@+id/toolbar"
@@ -35,7 +35,7 @@
 
 
         <ImageView
-            android:userId="@+userId/image_view_logo"
+            android:id="@+id/image_view_logo"
             android:layout_width="450dp"
             android:layout_height="450dp"
             android:adjustViewBounds="true"

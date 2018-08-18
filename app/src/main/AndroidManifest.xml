@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quote.cowtit">
+    package="com.quote.cwotit">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -10,16 +11,15 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-        <activity android:name="com.quote.cowtit.Activity.MainActivity">
+        android:theme="@style/AppTheme"
+        android:testOnly="false">
+        <activity android:name="com.quote.cwotit.Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -40,14 +40,20 @@
 
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
-
         </activity>
+        <activity android:name="com.quote.cwotit.Activity.GetStart" />
+        <activity android:name="com.quote.cwotit.Activity.Register"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.quote.cwotit.Activity.MainLogin"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.quote.cwotit.Activity.DashBoard"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.quote.cwotit.Activity.ForgotPassword"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.quote.cwotit.Activity.AddPost"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"/>
+            <!--android:launchMode="singleTask"-->
 
-
-        <activity android:name="com.quote.cowtit.Activity.GetStart" />
-        <activity android:name="com.quote.cowtit.Activity.Register" />
-        <activity android:name="com.quote.cowtit.Activity.MainLogin" />
-        <activity android:name="com.quote.cowtit.Activity.DashBoard" />
-        <activity android:name="com.quote.cowtit.Activity.ForgotPassword" />
     </application>
+
 </manifest>

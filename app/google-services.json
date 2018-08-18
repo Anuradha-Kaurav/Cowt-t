@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1083182875137",
+    "firebase_url": "https://cwot-t.firebaseio.com",
+    "project_id": "cwot-t",
+    "storage_bucket": "cwot-t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083182875137:android:3f60da3e69b6a2fc",
+        "android_client_info": {
+          "package_name": "com.quote.cwotit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083182875137-ud6n12d3favlgpg9fuheaguarebbslao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-It0qBFjPJC6_TpRYN-DssxE9amjkq6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

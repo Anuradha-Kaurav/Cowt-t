@@ -7,10 +7,10 @@
     android:background="@drawable/bg"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.quote.cowtit.Activity.GetStart">
+    tools:context="com.quote.cwotit.Activity.GetStart">
 
     <Button
-        android:userId="@+userId/btn_getstart"
+        android:id="@+id/btn_getstart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -21,7 +21,7 @@
         android:textSize="18sp" />
 
     <LinearLayout
-        android:userId="@+userId/txt_loginhere"
+        android:id="@+id/txt_loginhere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:text="Have you account already ?"
             android:textColor="@color/black"
-
             android:textSize="18sp"
             android:textStyle="bold" />
 

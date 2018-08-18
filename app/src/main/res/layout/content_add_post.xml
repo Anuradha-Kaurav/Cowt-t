@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/theamcolor"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.quote.cowtit.Activity.AddPost"
-    tools:showIn="@layout/activity_add_post">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <MultiAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:userId="@+userId/edt_post"
-            android:background="@drawable/edit_shap"
-            android:hint="What,s on your mind?"
-            android:padding="10dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="10dp"
-            android:userId="@+userId/txt_post_con"
-            android:text="Post"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="30dp"
+    <RelativeLayout
+        android:id="@+id/back_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:userId="@+userId/rec_allpost">
+        android:background="@color/themecolordark">
 
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black"
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_btn"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!--<include layout="@layout/layout_add_post" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_allpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/back_layout">
     </android.support.v7.widget.RecyclerView>
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Sorry, no post available"
+        android:visibility="gone"
+        android:textSize="16sp"/>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/smileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/category_list"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/selected_emoji"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_sentiment_green_24dp" />
+
+            <TextView
+                android:id="@+id/selected_emoji_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/selected_emoji"
+                android:textColor="@color/themecolordark"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_post_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="Post"
+                android:textColor="@color/theamcolor"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/edt_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/selected_emoji"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_shap"
+                android:gravity="top"
+                android:hint="What's on your mind?"
+                android:inputType="text|textNoSuggestions|textMultiLine"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_below="@+id/smileLayout"-->
+            <!--android:background="#232323"></RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>

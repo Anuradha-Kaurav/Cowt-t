@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:userId="@+userId/sevp"
+    android:id="@+id/sevp"
     android:background="#e1e0e0"
-    tools:context="Fragment.SearchFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <!--<Button-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
-    <!--andruserIdd:iduserId@+id/srh_by_user"/>-->
+    <!--andridd:idid@+id/srh_by_user"/>-->
     <!--<Button-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
-    <!--andruserIdd:iduserId@+id/srh_in_mode" />-->
+    <!--andridd:idid@+id/srh_in_mode" />-->
     <!--<Button-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
-    <!--andruserIdd:iduserId@+id/srh_in_all"/>-->
+    <!--andridd:idid@+id/srh_in_all"/>-->
 
     <!--<SearchView-->
-    <!--andruserIdd:iduserId@+id/simpleSearchView"-->
+    <!--andridd:idid@+id/simpleSearchView"-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:background="@color/colorPrimaryDark"-->
@@ -31,27 +30,28 @@
     <!--<android.support.v7.widget.RecyclerView-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
-    <!--andruserIdd:iduserId@+id/list_serch">-->
+    <!--andridd:idid@+id/list_serch">-->
 
     <!--</android.support.v7.widget.RecyclerView>-->
 
     <android.support.v4.view.ViewPager
-        android:userId="@+userId/container_main"
+        android:id="@+id/container_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_scrollFlags="scroll|enterAlways">
 
         <android.support.design.widget.TabLayout
-            android:userId="@+userId/tabs2"
+            android:id="@+id/tabs2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary" />
+            android:background="@color/theamcolor"
+            app:tabIndicatorColor="@color/white"/>
         <android.support.v7.widget.Toolbar
-            android:userId="@+userId/toolbar"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/themecolorlight"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay">
         </android.support.v7.widget.Toolbar>

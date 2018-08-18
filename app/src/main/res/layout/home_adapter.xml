@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    android:layout_marginTop="8dp"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:layout_marginBottom="7dp"
+    android:elevation="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="5dp"
-        android:background="@color/gray1"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
-            android:userId="@+userId/img_dot"
+            android:id="@+id/img_dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -29,35 +30,31 @@
     </LinearLayout>
 
     <LinearLayout
-        android:userId="@+userId/singelist"
+        android:id="@+id/singelist"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="3dp"
-        android:background="@color/gray1"
-        android:gravity="center"
+        android:background="@color/white"
         android:orientation="vertical"
-        android:weightSum="2">
-
+        android:weightSum="1.5">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:gravity="right">
 
             <TextView
-                android:userId="@+userId/txt_usermode"
+                android:id="@+id/txt_usermode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="5dp"
                 android:text="(Romantic)"
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                android:visibility="invisible"/>
 
         </LinearLayout>
 
@@ -65,14 +62,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:layout_weight="1.5">
 
             <TextView
-                android:userId="@+userId/txt_post"
+                android:id="@+id/txt_post"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
                 android:text="sonali"
                 android:textColor="@color/black"
                 android:textSize="16dp" />
@@ -83,13 +83,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:userId="@+userId/ll_like_dis_comm"
+        android:id="@+id/ll_like_dis_comm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="3dp"
-        android:background="@color/gray2"
+        android:background="@color/white"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="4">
@@ -102,13 +99,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:userId="@+userId/img_lick"
+                android:id="@+id/img_lick"
                 android:layout_width="wrap_content"
                 android:layout_height="25sp"
                 android:background="@drawable/ic_tum_like" />
 
             <TextView
-                android:userId="@+userId/txt_like"
+                android:id="@+id/txt_like"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -126,13 +123,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:userId="@+userId/img_dislike"
+                android:id="@+id/img_dislike"
                 android:layout_width="wrap_content"
                 android:layout_height="25sp"
                 android:background="@drawable/ic_tum_dislike" />
 
             <TextView
-                android:userId="@+userId/txt_dislike"
+                android:id="@+id/txt_dislike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -151,7 +148,7 @@
 
 
             <TextView
-                android:userId="@+userId/rewcowtit"
+                android:id="@+id/rewcowtit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -169,7 +166,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:userId="@+userId/cowtit_thef"
+                android:id="@+id/cowtit_thef"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -181,8 +178,8 @@
 
     </LinearLayout>
 
-
-</LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
 
 
     <!-- START NEW CHANGES--><!--
@@ -195,7 +192,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        andruserIdd:iduserId@+id/singelist"
+        andridd:idid@+id/singelist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -226,7 +223,7 @@
                     android:weightSum="100">
 
                     <TextView
-                        andruserIdd:iduserId@+id/txt_post"
+                        andridd:idid@+id/txt_post"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="90"
@@ -235,7 +232,7 @@
                         android:textSize="16dp" />
 
                     <ImageView
-                        andruserIdd:iduserId@+id/img_dot"
+                        andridd:idid@+id/img_dot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -246,12 +243,12 @@
                 &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
                 &lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;
                 &lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;
-                &lt;!&ndash;andruserIdd:iduserId@+id/txt_username"&ndash;&gt;
+                &lt;!&ndash;andridd:idid@+id/txt_username"&ndash;&gt;
                 &lt;!&ndash;android:text=".Trijal Madan"&ndash;&gt;
                 &lt;!&ndash;android:textAlignment="textStart"&ndash;&gt;
                 &lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;
                 <TextView
-                    andruserIdd:iduserId@+id/txt_usermode"
+                    andridd:idid@+id/txt_usermode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -287,13 +284,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                andruserIdd:iduserId@+id/img_lick"
+                andridd:idid@+id/img_lick"
                 android:layout_width="wrap_content"
                 android:layout_height="25sp"
                 android:background="@drawable/ic_tum_like" />
 
             <TextView
-                andruserIdd:iduserId@+id/txt_like"
+                andridd:idid@+id/txt_like"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -311,13 +308,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                andruserIdd:iduserId@+id/img_dislike"
+                andridd:idid@+id/img_dislike"
                 android:layout_width="wrap_content"
                 android:layout_height="25sp"
                 android:background="@drawable/ic_tum_dislike" />
 
             <TextView
-                andruserIdd:iduserId@+id/txt_dislike"
+                andridd:idid@+id/txt_dislike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -336,7 +333,7 @@
 
 
             <TextView
-                andruserIdd:iduserId@+id/rewcowtit"
+                andridd:idid@+id/rewcowtit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -354,7 +351,7 @@
             android:orientation="horizontal">
 
             <TextView
-                andruserIdd:iduserId@+id/cowtit_thef"
+                andridd:idid@+id/cowtit_thef"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

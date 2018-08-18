@@ -1,111 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:contecom.example.lenovo.mycowtitapplication.Activityvity.Deshbord">
-
-    <android.support.v7.widget.Toolbar
-        andridd:idid@+id/my_awesome_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        app:logo="@drawable/ic_logo"
-        app:title="" />
-
-    &lt;!&ndash;<android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-
-        <android.support.v7.widget.Toolbar
-            andridd:idid@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="">
-
-            <ImageView
-                andridd:idid@+id/iv_logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:gravity="left"
-                android:src="@drawable/ic_cwotit_green" />
-        </android.support.v7.widget.Toolbar>
-
-
-        <android.support.design.widget.TabLayout
-            andridd:idid@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabMode="fixed" />
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        andridd:idid@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />&ndash;&gt;
-</android.support.design.widget.CoordinatorLayout>-->
-
-
-<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.v7.widget.Toolbar
-            andridd:idid@+id/toolbar"  android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-    </android.support.design.widget.AppBarLayout>
-    </android.support.design.widget.CoordinatorLayout>-->
-
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <include
-        android:id="@+id/toolbar_deshbord"
+        android:id="@+id/toolbar_dashbord"
         layout="@layout/toolbar" />
-
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar_deshbord"
+        android:layout_below="@+id/toolbar_dashbord"
         android:orientation="vertical">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingBottom="45dp"/>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary" />
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/themecolordark"/>
 
     </RelativeLayout>
 </LinearLayout>

@@ -15,21 +15,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/theamcolor"
         android:weightSum="2">
         <EditText
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:padding="10dp"
-            android:userId="@+userId/ser_mood"
+            android:id="@+id/ser_mood"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_shap2"
+            android:inputType="text|textNoSuggestions"
             android:layout_marginLeft="20dp"
             android:layout_weight="1.7"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="0.2"
-            android:userId="@+userId/btn_ser_mood"
+            android:id="@+id/btn_ser_mood"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="-50dp"
             android:layout_height="40dp"
@@ -43,6 +44,6 @@
     <android.support.v7.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-        android:userId="@+userId/list_mood">
+        android:id="@+id/list_mood">
 </android.support.v7.widget.RecyclerView>
 </LinearLayout>
