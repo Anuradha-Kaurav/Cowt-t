@@ -81,6 +81,7 @@ public class Register extends AppCompatActivity {
         //hide keyboard
         InputMethodManager imm = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), 0);
+
         switch (view.getId()) {
             case R.id.btn_register:
                 if (validation()) {
@@ -88,8 +89,8 @@ public class Register extends AppCompatActivity {
                 }
                 break;
             case R.id.btn_reg_cencl:
-                Intent intent = new Intent(Register.this, MainLogin.class);
-                startActivity(intent);
+//                Intent intent = new Intent(Register.this, MainLogin.class);
+//                startActivity(intent);
                 finish();
                 break;
         }
@@ -158,7 +159,7 @@ public class Register extends AppCompatActivity {
                                 finish();
 
                             } else {
-                                if(response.getString("message").equalsIgnoreCase("Email id 34 already registered.")){
+                                if(response.getString("message").equalsIgnoreCase("Email id is already registered.")){
                                     Utils.simpleSnackBar(Register.this, "Email id is already registered");
                                 }else if(response.getString("message").equalsIgnoreCase("User Name not available.")){
                                     Utils.simpleSnackBar(Register.this, "This user name is not available");
