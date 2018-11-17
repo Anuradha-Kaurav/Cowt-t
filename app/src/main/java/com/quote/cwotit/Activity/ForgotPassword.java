@@ -1,11 +1,13 @@
 package com.quote.cwotit.Activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -61,6 +63,9 @@ public class ForgotPassword extends AppCompatActivity {
 
     @OnClick({R.id.btn_otp, R.id.btn_updatepass, R.id.btn_cancel})
     public void onViewClicked(View view) {
+        //hide keyboard
+        InputMethodManager imm = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), 0);
         switch (view.getId()) {
             case R.id.btn_otp:
                 if (validationotp()) {
